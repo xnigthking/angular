@@ -1,0 +1,48 @@
+/* Estilo para a seção de introdução (Direito Penal e Civil) */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; /* Espaço entre a introdução e a seção "Sobre Nós" */
+}
+
+.intro-item {
+  width: 48%; /* Cada item ocupa quase metade da largura */
+  padding: 20px;
+  background-color: #f9f9f9; /* Fundo suave para destacar os textos */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+.intro-item h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.intro-item p {
+  font-size: 1em;
+  color: #34495e;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Estilo para a seção "Sobre Nós" */
+.about-us {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+  font-size: 2em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 1.1em;
+  color: #34495e;
+  line-height: 1.6;
+  text-align: justify;
+}

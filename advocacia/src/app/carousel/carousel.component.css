@@ -1,0 +1,43 @@
+/* .carousel: Estilo do contêiner do carrossel */
+.carousel {
+  width: 100%; /* O carrossel ocupará toda a largura disponível */
+  height: 60vh; /* Altura proporcional à tela */
+  max-height: 500px; /* Limite máximo de altura */
+  overflow: hidden; /* Oculta as imagens que saem da área visível */
+  position: relative;
+  background-color: transparent; /* Fundo transparente para lidar com PNGs */
+  display: flex; /* Flexbox para garantir que as imagens dentro do carrossel fiquem alinhadas corretamente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  align-items: center; /* Alinha as imagens verticalmente */
+}
+
+/* .carousel-slide: Contém as imagens e controla a exibição delas */
+.carousel-slide {
+  display: flex; /* Flexbox para exibir as imagens lado a lado */
+  width: 300%; /* Isso cobre exatamente 3 imagens (100% * 3) */
+  height: 100%; /* O slide ocupa 100% da altura do carrossel */
+  transition: transform 1s ease; /* Suaviza a transição */
+}
+
+/* .carousel-slide img: Estilo para cada imagem */
+.carousel-slide img {
+  width: 100%; /* Cada imagem ocupa 100% da largura do carrossel */
+  height: 100%; /* A altura será 100% do carrossel */
+  object-fit: contain; /* A imagem se ajusta sem cortar, mantendo a proporção */
+  background: transparent; /* Fundo transparente para lidar com imagens PNG */
+  display: block; /* Evita que as imagens sejam tratadas como inline */
+}
+
+/* Ajusta a primeira imagem para ser 10% menor */
+.carousel-slide img:first-child {
+  transform: scale(0.9); /* Reduz a primeira imagem em 10% */
+  object-fit: contain; /* Garantindo que a imagem se ajuste sem cortar */
+}
+
+/* Animação para transição entre as imagens */
+@keyframes slide {
+  0% { transform: translateX(0); } /* Primeira imagem visível */
+  33.33% { transform: translateX(-100%); } /* Transição para a segunda imagem */
+  66.66% { transform: translateX(-200%); } /* Transição para a terceira imagem */
+  100% { transform: translateX(0); } /* Retorna à primeira imagem */
+}

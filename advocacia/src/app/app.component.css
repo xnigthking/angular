@@ -1,0 +1,47 @@
+/* src/app/app.component.css */
+
+/* Definir o layout geral da página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantir que a altura mínima seja 100% da tela */
+  }
+  
+  main {
+    flex: 1; /* Garante que o conteúdo principal ocupe o restante do espaço */
+  }
+  
+  footer {
+    background-color: #282828;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  footer .footer-bottom {
+    font-size: 0.9em;
+  }
+  
+  button.about-us-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.about-us-button:hover {
+    background-color: #e6b800;
+  }
+  
